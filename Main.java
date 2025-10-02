@@ -14,7 +14,7 @@ public class Main {
 }
 
 class Locomotiva {
-    private String tip;  // camp privat care retine tipul locomotivei
+    public  String tip;  // camp privat care retine tipul locomotivei
     
     // constructorul clasei Locomotiva 
     public Locomotiva(String tip) {
@@ -33,8 +33,8 @@ class Locomotiva {
 }
 
 class Vagon {
-    private String tip;          // tipul vagonului 
-    private String dateIncarcate; // ce este incarcat in vagon
+    public  String tip;          // tipul vagonului 
+    public String dateIncarcate; // ce este incarcat in vagon
     
     // constructorul clasei Vagon
     public Vagon(String tip) {
@@ -56,8 +56,8 @@ class Vagon {
 }
 
 class Tren {
-    private Locomotiva locomotiva; // trenul are o locomotiva
-    private Vagon vagon;           // trenul are un vagon
+    public Locomotiva locomotiva; // trenul are o locomotiva
+    public  Vagon vagon;           // trenul are un vagon
     
     // constructorul clasei Tren (primește o locomotiva si un vagon)
     public Tren(Locomotiva locomotiva, Vagon vagon) {
